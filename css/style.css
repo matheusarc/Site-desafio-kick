@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/backImg.jpg);
+}
+
+.container{
+    background-color: #cccccc;
+    width: 1600px;
+    margin: auto;
+}
+.header{
+    background-color: #696774;
+    text-align: center;
+    padding: 10px;
+    height: 147px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.header h1 a{
+    word-spacing: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVBAR*/
+.menu{
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-item > a:hover {
+    background-color: #444;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #444;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/*conteudo*/
+.content{
+    margin: 30px 0 0 0;
+}
+.content h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    word-wrap: 2px;
+    letter-spacing: 1px;
+    margin: -15px 0 10px 0;
+    color: black;
+    padding: 5px;
+    word-spacing: 5px;
+}
+.text-span p{
+    background-color: #D9D9D9;
+    text-align: center;
+    width: 1180px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* PRODUTOS */
+.containerProdutos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}.containerProdutos h2{
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 15px 0 10px 0;
+    color: black;
+}
+.principais, .imperdiveis, .descontos{
+    display: flex;
+    flex-direction: column;
+}
+.imperdiveis{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 0 60px;
+}
+.produto{
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+    transition: .1s;
+}
+.produto:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+.produto img{
+    margin-right: 10px;
+}
+.produto p{
+    text-align: center;
+}
+
+/* FOOTER */
+.noticia{
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    background-color: #a7979783;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    font-size: .7em;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: white;
+    border-top: 2px solid black;
+    background-color: #1F2024;
+    height: 20px;
+}
+
+/*RESPONSIVIDADE TABLETS*/
+@media (max-width: 1024px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        background-color: #cccccc;
+        width: 100%;
+        margin: auto;
+    }
+    .menu{
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        font-size: 1.5em;
+    }
+    
+    .text-span p{
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+    .content h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        word-wrap: 2px;
+        letter-spacing: 1px;
+        margin: -15px 0 10px 0;
+        color: black;
+        padding: 5px;
+        word-spacing: 5px;
+    }
+    .containerProdutos{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerProdutos h2{
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 15px 0 10px 0;
+    color: black;
+    }
+    .imperdiveis{
+    border: none;
+    padding: 0 60px;
+    }
+    .produto{
+    margin: auto;
+    width: 550px;
+    gap: 50px;
+    font-size: 1.5em;
+    font-weight: 400;
+    }
+    .produto img{
+        margin: auto;
+    }
+}
+
+/*RESPONSIVIDADE CELULARES*/
+@media (max-width: 500px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        background-color: #cccccc;
+        width: 100%;
+    }
+    .menu{
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        font-size: 1.5em;
+    }
+    .text-span p{
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+    .content h2{
+        text-align: center;
+        font-weight: 600;
+        font-size: 2em;
+        word-wrap: 2px;
+        letter-spacing: 1px;
+        margin: -15px 0 10px 0;
+        color: black;
+        padding: 5px;
+        word-spacing: 5px;
+    }
+    .containerProdutos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .containerProdutos h2{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 15px 0 10px 0;
+    color: black;
+    }
+    .imperdiveis{
+    border: none;
+    padding: 0 60px;
+    }
+    .produto{
+    margin: auto;
+    width: 550px;
+    gap: 50px;
+    font-size: 1.5em;
+    font-weight: 400;
+    }
+    .produto img{
+        margin: auto;
+    }
+    .footer{
+        display: flex;
+        font-size: 1em;
+        color: white;
+        border-top: 2px solid black;
+        background-color: #1F2024;
+        height: 50px;
+    }
+    .noticia{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        background-color: #a7979783;
+    }
+}

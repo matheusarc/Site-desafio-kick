@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/backImg.jpg);
+}
+.container{
+    background-color: #052221;
+    width: 1600px;
+    margin: auto;
+    height: 100%;
+}
+.header{
+    background-color: #4B4952;
+    text-align: center;
+    padding: 10px;
+    height: 147px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.header h1 a{
+    word-spacing: 7px;
+    text-decoration: none;
+    color: white;
+}
+/*NAVBAR*/
+.menu{
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+.navbar {
+    background-color: #333;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-item > a:hover {
+    background-color: #444;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #444;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/*conteudo*/
+.content{
+    margin: 30px 0 0 0;
+}
+.content h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    word-wrap: 2px;
+    letter-spacing: 1px;
+    margin: -15px 0 10px 0;
+    color: black;
+    padding: 5px;
+    word-spacing: 5px;
+}
+.text-span p{
+    background-color: #D9D9D9;
+    text-align: center;
+    width: 1180px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.categorias{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.categorias li{
+    margin: 25px;
+    background-color: white;
+    border-radius: 100px;
+}
+.categorias li a{
+    text-decoration: none;
+    color: rgb(25, 25, 97);
+    font-size: 30px;
+    letter-spacing: 50px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+}
+.classicos{
+    background-image: url(https://i.pinimg.com/236x/7d/6b/a9/7d6ba9124c1042564d444603957a522f.jpg);
+    padding: 2% 25%;
+    transition: .5s;
+}
+.acao{
+    background-image: url(https://i.pinimg.com/736x/9d/4f/69/9d4f6935691cc47d7c3bddff7282e2be.jpg);
+    padding: 2% 35%;
+    transition: .5s;
+}
+.aventura{
+    background-image: url(https://i.pinimg.com/236x/0b/16/7f/0b167f26a95baeea3b45f68850510c3e.jpg);
+    padding: 2% 27%;
+    transition: .5s;
+}
+.terror{
+    background-image: url(https://i.pinimg.com/736x/0f/05/08/0f0508f6bb58a4241038a4c6c6f9cb87.jpg);
+    padding: 2% 32%;
+    transition: .5s;
+}
+.corrida{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3-QuG8CBjeKSxdYsH6ty683hL1W_6n79bQ&s);
+    background-size: cover;
+    padding: 2% 30%;
+    transition: .5s;
+}
+.esporte{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZAmLSyT7E9qY6v1YGXgQuj0W5uFjeUtsww&s);
+    background-size: cover;
+    padding: 2% 28%;
+    transition: .5s;
+}
+.classicos:hover, .acao:hover, .aventura:hover, .terror:hover, .corrida:hover, .esporte:hover{
+    box-shadow: 1px 1px 40px rgb(87, 85, 85);
+    cursor: pointer;
+}
+/*RESPONSIVIDADE TABLET*/
+@media (max-width: 1024px){
+    .container{
+        background-color: #052221;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    }
+    .categorias{
+        width: 80%;
+        margin: auto;
+    }
+    .classicos{
+        background-image: url(https://i.pinimg.com/236x/7d/6b/a9/7d6ba9124c1042564d444603957a522f.jpg);
+        padding: 2% 25%;
+        transition: .5s;
+        width: 70%;
+    }
+    .acao{
+        background-image: url(https://i.pinimg.com/736x/9d/4f/69/9d4f6935691cc47d7c3bddff7282e2be.jpg);
+        padding: 2% 35%;
+        transition: .5s;
+        width: 50%;
+    }
+    .aventura{
+        background-image: url(https://i.pinimg.com/236x/0b/16/7f/0b167f26a95baeea3b45f68850510c3e.jpg);
+        padding: 2% 27%;
+        transition: .5s;
+    }
+    .terror{
+        background-image: url(https://i.pinimg.com/736x/0f/05/08/0f0508f6bb58a4241038a4c6c6f9cb87.jpg);
+        padding: 2% 32%;
+        transition: .5s;
+        width: 56%;
+    }
+    .corrida{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3-QuG8CBjeKSxdYsH6ty683hL1W_6n79bQ&s);
+        background-size: cover;
+        padding: 2% 30%;
+        transition: .5s;
+        width: 59%;
+    }
+    .esporte{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZAmLSyT7E9qY6v1YGXgQuj0W5uFjeUtsww&s);
+        background-size: cover;
+        padding: 2% 28%;
+        transition: .5s;
+        width: 63%;
+    }
+}
+
+/*RESPONSIVIDADE CELULAR*/
+@media (max-width: 500px){
+    .container{
+        background-color: #052221;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    }
+    .categorias{
+        width: 80%;
+        margin: auto;
+    }
+    .classicos{
+        background-image: url(https://i.pinimg.com/236x/7d/6b/a9/7d6ba9124c1042564d444603957a522f.jpg);
+        padding: 2% 25%;
+        transition: .5s;
+        width: 70%;
+    }
+    .acao{
+        background-image: url(https://i.pinimg.com/736x/9d/4f/69/9d4f6935691cc47d7c3bddff7282e2be.jpg);
+        padding: 2% 35%;
+        transition: .5s;
+        width: 50%;
+    }
+    .aventura{
+        background-image: url(https://i.pinimg.com/236x/0b/16/7f/0b167f26a95baeea3b45f68850510c3e.jpg);
+        padding: 2% 27%;
+        transition: .5s;
+    }
+    .terror{
+        background-image: url(https://i.pinimg.com/736x/0f/05/08/0f0508f6bb58a4241038a4c6c6f9cb87.jpg);
+        padding: 2% 32%;
+        transition: .5s;
+        width: 56%;
+    }
+    .corrida{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3-QuG8CBjeKSxdYsH6ty683hL1W_6n79bQ&s);
+        background-size: cover;
+        padding: 2% 30%;
+        transition: .5s;
+        width: 59%;
+    }
+    .esporte{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZAmLSyT7E9qY6v1YGXgQuj0W5uFjeUtsww&s);
+        background-size: cover;
+        padding: 2% 28%;
+        transition: .5s;
+        width: 63%;
+    }
+}

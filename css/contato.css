@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/backImg.jpg);
+}
+
+.container{
+    background-color: rgb(204, 204, 204);
+    width: 1600px;
+    margin: auto;
+}
+.header{
+    background-color: #696774;
+    text-align: center;
+    padding: 10px;
+    height: 147px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.header h1 a{
+    word-spacing: 7px;
+    text-decoration: none;
+    color: white;
+}
+/*NAVBAR*/
+.menu{
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+.navbar {
+    background-color: #333;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-item > a:hover {
+    background-color: #444;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #444;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/*conteudo*/
+.content{
+    margin: 30px 0 0 0;
+}
+.content h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    word-wrap: 2px;
+    letter-spacing: 1px;
+    margin: -15px 0 10px 0;
+    color: black;
+    padding: 5px;
+    word-spacing: 5px;
+}
+.text-span p{
+    background-color: #D9D9D9;
+    text-align: center;
+    width: 1180px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.content{
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.content h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    word-wrap: 2px;
+    letter-spacing: 1px;
+    margin: -15px 0 10px 0;
+    color: black;
+    padding: 5px;
+    word-spacing: 5px;
+}
+.text-span p{
+    background-color: #D9D9D9;
+    text-align: center;
+    width: 1180px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.radio-list{
+    background-color: #D9D9D9;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+textarea{
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    padding: 5px;
+    background-color: #a4a3aa;
+    border: none;
+    margin: 5px 0;
+    transition: .7s;
+}
+button:hover{
+    padding: 5px;
+    background-color: #6f6f70;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .7s;
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    font-size: .7em;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: white;
+    border-top: 2px solid black;
+    background-color: #1F2024;
+    height: 20px;
+}
+/*RESPONSIVIDADE TABLET*/
+@media (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+    .text-span p{
+        width: 90%;
+        font-size: 1.5em;
+    }
+    span.text-span{
+        font-size: 2em;
+    }
+    .radio-list{
+        font-size: 1.4em;
+        width: 60%;
+    }
+    .content h2{
+        font-weight: 600;
+        font-size: 2em;
+    }
+    label{
+        font-size: 1.4em;
+    }
+    .form-group textarea{
+        width: 400px;
+    }
+}
+
+/*RESPONSIVIDADE CELULAR*/
+@media (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+    .text-span p{
+        width: 90%;
+        font-size: 1em;
+    }
+    .radio-list{
+        font-size: 1em;
+        width: 70%;
+        gap: 5px;
+    }
+    .content h2{
+        font-weight: 600;
+        font-size: 2em;
+    }
+    label{
+        font-size: 1.4em;
+    }
+    .form-group textarea{
+        width: 400px;
+    }
+}
